@@ -42,7 +42,6 @@ func run(ctx *cli.Context) error {
 	log.Info("Started device")
 
 	/* Setup signal channel */
-	// log.Info("Processing device updates")
 	signals := make(chan os.Signal)
 	signal.Notify(signals, os.Interrupt, syscall.SIGTERM)
 
